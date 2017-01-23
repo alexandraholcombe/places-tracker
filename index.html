@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/jquery-3.1.1.js" charset="utf-8"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <meta charset="utf-8">
+  <title>Places You've Been</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Places You've Been</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="user-input">
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input name="location" id="location" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="fellow-travelers">People Who Went With Me</label>
+            <input name="fellow-travelers" id="fellow-travelers" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="date">Date Traveled</label>
+            <input name="date" id="date" type="month" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-lg btn-success">Add to List</button>
+        </form>
+        <h3>List of places:</h3>
+        <ul id="place-list">
+        </ul>
+      </div>
+      <div class="col-md-6" id="output">
+        <h2></h2>
+        <ul id="properties-list">
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
