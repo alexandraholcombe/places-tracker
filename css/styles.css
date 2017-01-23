@@ -1,0 +1,9 @@
+#output {
+  display: none;
+}
+
+.places:hover{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}

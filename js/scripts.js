@@ -15,5 +15,14 @@ $(document).ready(function() {
     var userTravel = new Travel(userLocation, userFellowTravelers, userDate);
 
     $("ul#place-list").append("<li class='places'>" + userTravel.travelLocation + "</li>")
+
+    $("input").val("");
+
+    $(".places").last().click( function() {
+      $("#output").show();
+      $("#output h2").text(userTravel.travelLocation);
+      $("#fellow-travelers-output").text(userTravel.travelers);
+      $("#date-output").text(userTravel.travelMonth);
+    });
   });
 });
